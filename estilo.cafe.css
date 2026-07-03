@@ -1,0 +1,79 @@
+body{
+   background-color: rgb(255, 200, 128);
+    }
+    h1{
+        font-size: 90px;
+        height: 50px;
+        color: azure;
+        
+    }
+    h2{
+        color: azure;
+    }
+    img2 {
+        width: 500px;
+  height: 40000px;
+    }
+    img3{
+        width: 500px;
+        height: 40000px;
+    }
+    link{
+        height: 60pxS;
+    }
+    img1{
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .container-link {
+        text-align: right;
+        color: azure;
+        
+    }
+    .renovo-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        font-family: 'Georgia', serif;
+    }
+    
+    .renovo-section {
+        background: #4e2401;
+        border-radius: 16px;
+        padding: 60px 50px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 30px rgba(rgb(248, 247, 247), rgb(249, 250, 249), rgb(244, 244, 247), alpha);
+        border: 1px solid #e8d9c7;
+    }
+    
+    .renovo-section.history {
+        background: #4e2401;
+    }
+    
+    .renovo-title {
+        color: #e7e5e4;
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: 540px;
+    }
+    
+    .renovo-text {
+        color: #f1ebeb;
+        line-height: 1.8;
+        font-size: 1.15rem;
+        text-align: justify;
+    }
+    
+    /* Responsivo */
+    @media (max-width: 500px) {
+        .renovo-section {
+            padding: 40px 50px;
+        }
+        .renovo-title {
+            font-size: 1.7rem;
+        }
+    }
+
+
