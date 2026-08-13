@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Bonazzoli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="A melhor.gif" 
+    alt="Imagem" 
+    class="rounded-3 shadow-sm" 
+    style="width: 1900px; height: 800px; object-fit: cover;">
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Meu Container Editável</title>
+      <!-- Estilos básicos para o container -->
+      <style>
+        /* Reset simples para margens e espaçamentos */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          background: #f0f2f5;
+          font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+        }
+    
+        /* CONTAINER PRINCIPAL – edite aqui! */
+        .meu-container {
+          max-width: 900px;
+          width: 100%;
+          background-color: #ffffff;
+          padding: 2.5rem 2rem;
+          border-radius: 32px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(2px);
+          transition: all 0.2s ease;
+          /* Sinta-se à vontade para mudar cores, tamanhos, fontes… */
+        }
+    
+        /* Área de conteúdo com espaçamento interno */
+        .conteudo {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+    
+        /* Título de exemplo – você pode trocar ou remover */
+        .titulo-destaque {
+          font-size: 2.2rem;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+          color: #1a1a2e;
+          border-left: 6px solid #4f46e5;
+          padding-left: 1rem;
+          margin-bottom: 0.5rem;
+        }
+    
+        /* Parágrafos, textos, listas – todos herdam o estilo do container */
+        .meu-container p {
+          font-size: 1.125rem;
+          line-height: 1.6;
+          color: #1e293b;
+          margin-bottom: 1rem;
+        }
+    
+        .meu-container ul, 
+        .meu-container ol {
+          padding-left: 1.8rem;
+          margin-bottom: 1.2rem;
+          color: #1e293b;
+        }
+    
+        .meu-container li {
+          margin-bottom: 0.4rem;
+          line-height: 1.5;
+        }
+    
+        .meu-container blockquote {
+          background: #f8fafc;
+          border-left: 6px solid #4f46e5;
+          padding: 1rem 1.5rem;
+          margin: 1.2rem 0;
+          border-radius: 12px;
+          font-style: italic;
+          color: #0f172a;
+        }
+    
+        /* Botão/call-to-action apenas para demonstrar – pode editar ou remover */
+        .btn-exemplo {
+          display: inline-block;
+          background: #4f46e5;
+          color: rgb(2, 2, 2);
+          font-weight: 600;
+          padding: 0.75rem 2rem;
+          border-radius: 60px;
+          text-decoration: none;
+          align-self: flex-start;
+          transition: background 0.2s;
+          border: none;
+          cursor: default; /* só para exemplo, não é interativo */
+          box-shadow: 0 4px 8px rgba(79, 70, 229, 0.2);
+          margin-top: 0.5rem;
+        }
+    
+        .btn-exemplo:hover {
+          background: #4338ca;
+        }
+    
+        /* Área de aviso – você pode apagar ou modificar */
+        .aviso-editavel {
+          margin-top: 2rem;
+          padding-top: 1.5rem;
+          border-top: 2px dashed #d1d5db;
+          color: #64748b;
+          font-size: 0.95rem;
+          text-align: center;
+        }
+    
+        /* Responsivo */
+        @media (max-width: 600px) {
+          .meu-container {
+            padding: 1.8rem 1.2rem;
+          }
+          .titulo-destaque {
+            font-size: 1.8rem;
+          }
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- 
+        ════════════════════════════════════════════════════════
+        CONTAINER EDITÁVEL – Edite o conteúdo dentro dele!
+        ════════════════════════════════════════════════════════
+      -->
+      <div class="Bonazzoli">
+    
+        <div class="conteudo">
+    
+          <!-- ====== TÍTULO ====== -->
+          <h1 class="titulo-destaque">
+            ✏️ Meu Container HTML
+          </h1>
+    
+          <!-- ====== TEXTO LIVRE ====== -->
+          <p>
+            Este é um <strong>container HTML</strong> criado para você editar e escrever o que quiser. 
+            Altere este texto, adicione imagens, listas, ou qualquer outro elemento HTML.
+          </p>
+    
+          <p>
+            Você pode usar este espaço para rascunhos, anotações, um bloco de notas visual, 
+            ou até mesmo para estruturar uma página rápida. Tudo dentro da div 
+            <code>.meu-container</code> é totalmente personalizável.
+          </p>
+    
+          <!-- ====== EXEMPLO DE LISTA ====== -->
+          <h2 style="font-weight: 600; font-size: 1.4rem; margin-top: 0.2rem; color: #0f172a;">
+            📋 Ideias para editar:
+          </h2>
+          <ul>
+            <li><strong>Mude o texto:</strong> escreva seus próprios parágrafos.</li>
+            <li><strong>Adicione imagens:</strong> use a tag <code>&lt;img&gt;</code>.</li>
+            <li><strong>Crie listas:</strong> como esta, ou ordenadas com <code>&lt;ol&gt;</code>.</li>
+            <li><strong>Incorpore links:</strong> <code>&lt;a href="#"&gt;link&lt;/a&gt;</code>.</li>
+            <li><strong>Insira citações:</strong> use <code>&lt;blockquote&gt;</code>.</li>
+          </ul>
+    
+          <!-- ====== EXEMPLO DE CITAÇÃO ====== -->
+          <blockquote>
+            “Este container é um ponto de partida. Edite os estilos, o layout, as cores… 
+            Torne-o seu!”
+          </blockquote>
+    
+          <!-- ====== BOTÃO DE EXEMPLO (apenas visual) ====== -->
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+            <span class="btn-exemplo">📌 Botão exemplo</span>
+            <span style="color: #64748b; font-size: 0.95rem;">(apenas visual — você pode substituir)</span>
+          </div>
+    
+          <!-- ====== ÁREA DE AVISO / DICA ====== -->
+          <div class="aviso-editavel">
+            ⚡ <strong>Dica:</strong> Edite o conteúdo dentro da div <code>.meu-container</code> no arquivo HTML. 
+            <br>Você também pode modificar as cores, fontes e espaçamentos no <code>&lt;style&gt;</code>.
+          </div>
+    
+          <!-- 
+            ✨ ADICIONE MAIS CONTEÚDO AQUI ✨
+            Exemplo: imagens, tabelas, formulários, vídeos, etc.
+          -->
+    
+        </div>
+        <!-- fim .conteudo -->
+    
+      </div>
+      <!-- fim .meu-container -->
+    
+    </body>
+    </html>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

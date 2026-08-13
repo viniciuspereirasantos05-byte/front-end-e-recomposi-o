@@ -1,0 +1,8 @@
+.imagem-responsiva {
+    width: 100%;
+    max-width: 600px; /* Defina o limite máximo desejado */
+    height: auto;
+  }
+meu_container{
+    background-color: black;
+}  
