@@ -1,8 +1,87 @@
-.imagem-responsiva {
-    width: 100%;
-    max-width: 600px; /* Defina o limite máximo desejado */
-    height: auto;
-  }
-meu_container{
-    background-color: black;
-}  
+body{
+   background-color: rgb(255, 253, 253);
+    }
+    h1{
+        font-size: 90px;
+        height: 50px;
+        color: rgb(119, 71, 0);
+        text-align: center
+;
+        
+    }
+    h2{
+        color: azure;
+    }
+    img2 {
+        width: 500px;
+  height: 40000px;
+    }
+    img3{
+        width: 500px;
+        height: 40000px;
+    }
+    link{
+        height: 60pxS;
+    }
+    img1{
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .container-link {
+        text-align: right;
+        color: azure;
+        
+    }
+    .renovo-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        font-family: 'Georgia', serif;
+    }
+    
+    .renovo-section {
+        background: #7e3d00;
+        border-radius: 16px;
+        padding: 60px 50px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 30px rgba(rgb(150, 2, 2), rgb(194, 149, 0), rgb(0, 0, 173), alpha);
+        border: 1px solid #e8d9c7;
+    }
+    
+    .renovo-section.history {
+        background: #7e3d00;
+    }
+    
+    .renovo-title {
+        color: #e7e5e4;
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: 540px;
+    }
+    
+    .renovo-text {
+        color: #f1ebeb;
+        line-height: 1.8;
+        font-size: 1.15rem;
+        text-align: justify;
+    }
+    
+    /* Responsivo */
+    @media (max-width: 500px) {
+        .renovo-section {
+            padding: 40px 50px;
+        }
+        .renovo-title {
+            font-size: 1.7rem;
+        }
+        .renovo-container{
+        background: #7e3d00;
+        border-radius: 16px;
+        padding: 30px 20px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 30px rgba(rgb(252, 55, 55), rgb(41, 168, 41), rgb(244, 244, 247), alpha);
+        border: 1px solid #e8d9c7;
+    }
+    }
