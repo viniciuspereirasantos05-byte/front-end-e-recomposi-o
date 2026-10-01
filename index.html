@@ -1,68 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-   
-    <link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="utf-8">
-<title>Pizzaria Bonazzoli</title>
+  <meta charset="UTF-8" />
+  <title>Jogo que um Adolescente Faria</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     
-    
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-            
-          <a class="nav.link" aria-current="page" href="index.html">🅷🅾🅼🅴 / </a>    <a class="nav.link" href="cardapio.html">🅲🅰🆁🅳🅰🅿🅸🅾 / </a>   <a class="nav.link" href="clube.html">🅲🅻🆄🅱🅴 / </a>  <a class="nav.link disabled" aria-disabled="true">🅳🅸🆂🅰🅱🅻🅴🅳 / </a>
-          
-      </ul>
-       <img class="img3" src="A melhor.gif" "195" height="1000", width="1900" div style="display: flex; align-items: flex-end; gap: 20px;"></div>>
- 
-    <h1 class="titulo">Pizzaria Bonazzoli</h1 >
-          <div class="renovo-container">
-    
-        <!-- Seção 1: Sobre Nós / Experiência -->
-        <section class="renovo-section2">
-            <div class="renovo-content">
-                <h2 class="-title"> Pizzaria Bonazzoli <h2>
-                <p class="renovo-text">
-                    <!-- Cole aqui o Texto 1 -->
-                </p>
-            </div>
-        </section>
-   
-  
-    
-    
-        
-    <div class="renovo-container">
-    
-        <!-- Seção 1: Sobre Nós / Experiência -->
-        <section class="renovo-section">
-            <div class="renovo-content">
-                <h2 class="renovo-title">Descubra o prazer de começar o dia ou renovar as energias da tarde na RENOVO. Aqui, o café é o protagonista: grãos selecionados, torrados com maestria e preparados com paixão para entregar o sabor mais equilibrado, aromático e intenso da cidade. Nossas bebidas quentes e geladas são perfeitas para qualquer momento.
-                    Além do café excepcional, oferecemos as melhores refeições para sua manhã e tarde. Pães artesanais fresquinhos, croissants dourados, ovos mexidos cremosos, bowls nutritivos com frutas da estação, iogurtes com granola caseira, sanduíches gourmet, saladas leves e doces irresistíveis como brownies, bolos e tortas. Tudo preparado com ingredientes frescos e de alta qualidade para transformar sua pausa em um momento especial de bem-estar e sabor. Na RENOVO, cada visita é uma experiência acolhedora que renova corpo e mente.</h2>
-                <p class="renovo-text">
-                    <!-- Cole aqui o Texto 1 -->
-                </p>
-            </div>
-        </section>
-    
-        <!-- Seção 2: Nossa História -->
-        <section class="renovo-section history">
-            <div class="renovo-content">
-                <h2 class="renovo-title">Nossa História
-                    A RENOVO nasceu de um sonho simples e poderoso. Em 2018, o casal Ana e Pedro, apaixonados por café e hospitalidade, decidiu deixar seus empregos corporativos para criar um espaço que fosse mais que uma cafeteria: um lugar de renovação. Inspirados nas viagens pelo interior do Brasil e nas fazendas de café, eles abriram as portas da primeira unidade em um antigo sobrado reformado no centro da cidade.
-Com muito esforço, dedicação e amor pelo que faziam, transformaram o espaço em um ambiente aconchegante, cheio de plantas, luz natural e mesas de madeira reciclada. O nome RENOVO representa exatamente isso: a chance de recomeçar, de recarregar as energias e de encontrar alegria nos pequenos momentos do dia. Hoje, a RENOVO é referência em qualidade e acolhimento, mantendo a essência familiar e artesanal que conquistou a comunidade desde o primeiro dia.
-                </h2>
-                <p class="renovo-text">
-                    <!-- Cole aqui o Texto 2 -->
-                </p>
-            </div>
-        </section>
-    
+
+  <!-- ================= MENU ================= -->
+  <div id="menu-screen">
+    <div class="stars-bg"></div>
+    <div class="menu-content">
+      <h1>Jogo que um Adolescente Faria</h1>
+      <p class="subtitle">Um space shooter feito com pressa, café e criatividade.</p>
+
+      <div class="info-box">
+        <h2>📖 Sobre o Jogo</h2>
+        <p>
+          Você pilota uma nave solitária no espaço enfrentando hordas infinitas
+          de inimigos. A cada onda a barra de progresso sobe — e no final dela,
+          um <strong>Boss gigante</strong> te espera.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h2>🎮 Como Jogar</h2>
+        <ul>
+          <li><strong>W</strong> — Avançar</li>
+          <li><strong>S</strong> — Recuar</li>
+          <li><strong>A</strong> — Esquerda</li>
+          <li><strong>D</strong> — Direita</li>
+          <li><strong>Espaço</strong> — Dano em área (Cooldown: 4s)</li>
+          <li>💚 Você tem <strong>3 corações</strong></li>
+          <li>⚠️ Encostar nos inimigos tira vida</li>
+        </ul>
+      </div>
+
+      <button id="play-btn" class="play-button">diversão aqui</button>
+    </div>
+  </div>
+
+  <!-- ================= JOGO ================= -->
+  <div id="game-wrapper" class="hidden">
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+
+    <div id="hud">
+      <div id="lives">💚💚💚</div>
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+        <span id="progress-text">0%</span>
+      </div>
+      <div id="score">Pontos: 0</div>
+      <div id="cooldown-ui">💥 Área: <span id="cd-text">Pronto</span></div>
     </div>
 
+    <div id="gameover-screen" class="hidden">
+      <h1>Fim de Jogo</h1>
+      <p id="final-score">Pontuação: 0</p>
+      <button id="restart-btn">Jogar Novamente</button>
+      <button class="menu-btn" onclick="voltarMenu()">Voltar ao Menu</button>
+    </div>
 
+    <div id="victory-screen" class="hidden">
+      <h1>🏆 Você Venceu!</h1>
+      <p id="victory-score">Pontuação: 0</p>
+      <button id="restart-btn-2">Jogar Novamente</button>
+      <button class="menu-btn" onclick="voltarMenu()">Voltar ao Menu</button>
+    </div>
+  </div>
 
+  <script src="game.js"></script>
 </body>
 </html>

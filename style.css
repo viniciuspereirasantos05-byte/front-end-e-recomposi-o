@@ -1,87 +1,224 @@
-body{
-   background-color: rgb(255, 253, 253);
-    }
-    h1{
-        font-size: 90px;
-        height: 50px;
-        color: rgb(119, 71, 0);
-        text-align: center
-;
-        
-    }
-    h2{
-        color: azure;
-    }
-    img2 {
-        width: 500px;
-  height: 40000px;
-    }
-    img3{
-        width: 500px;
-        height: 40000px;
-    }
-    link{
-        height: 60pxS;
-    }
-    img1{
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-    }
-    .container-link {
-        text-align: right;
-        color: azure;
-        
-    }
-    .renovo-container {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
-        font-family: 'Georgia', serif;
-    }
-    
-    .renovo-section {
-        background: #7e3d00;
-        border-radius: 16px;
-        padding: 60px 50px;
-        margin-bottom: 40px;
-        box-shadow: 0 10px 30px rgba(rgb(150, 2, 2), rgb(194, 149, 0), rgb(0, 0, 173), alpha);
-        border: 1px solid #e8d9c7;
-    }
-    
-    .renovo-section.history {
-        background: #7e3d00;
-    }
-    
-    .renovo-title {
-        color: #e7e5e4;
-        font-size: 2.8rem;
-        margin-bottom: 25px;
-        text-align: center;
-        font-weight: 540px;
-    }
-    
-    .renovo-text {
-        color: #f1ebeb;
-        line-height: 1.8;
-        font-size: 1.15rem;
-        text-align: justify;
-    }
-    
-    /* Responsivo */
-    @media (max-width: 500px) {
-        .renovo-section {
-            padding: 40px 50px;
-        }
-        .renovo-title {
-            font-size: 1.7rem;
-        }
-        .renovo-container{
-        background: #7e3d00;
-        border-radius: 16px;
-        padding: 30px 20px;
-        margin-bottom: 40px;
-        box-shadow: 0 10px 30px rgba(rgb(252, 55, 55), rgb(41, 168, 41), rgb(244, 244, 247), alpha);
-        border: 1px solid #e8d9c7;
-    }
-    }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.hidden { display: none !important; }
+
+/* ================= MENU ================= */
+#menu-screen {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(1px 1px at 60% 70%, white, transparent),
+    radial-gradient(1.5px 1.5px at 80% 20%, white, transparent),
+    radial-gradient(1px 1px at 40% 80%, white, transparent),
+    radial-gradient(2px 2px at 10% 60%, white, transparent),
+    radial-gradient(1px 1px at 90% 50%, white, transparent);
+  background-size: 200px 200px;
+  opacity: 0.7;
+  animation: twinkle 4s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.4; }
+  to { opacity: 0.9; }
+}
+
+.menu-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  text-align: center;
+  padding: 30px;
+  background: rgba(10, 10, 30, 0.75);
+  border: 2px solid #6a3cff;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(106, 60, 255, 0.5);
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #b47aff;
+  text-shadow: 0 0 10px #6a3cff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.info-box {
+  text-align: left;
+  background: rgba(106, 60, 255, 0.1);
+  border-left: 4px solid #b47aff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.info-box h2 {
+  color: #b47aff;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.info-box p, .info-box li {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.info-box ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+/* Botão redondo "diversão aqui" */
+.play-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 25px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #6a3cff, #b47aff);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 25px #6a3cff, 0 0 50px rgba(106, 60, 255, 0.5);
+  transition: 0.3s;
+  animation: pulse 2s infinite;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #b47aff, 0 0 80px #6a3cff;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 25px #6a3cff, 0 0 50px rgba(106, 60, 255, 0.5); }
+  50% { box-shadow: 0 0 40px #b47aff, 0 0 80px rgba(180, 122, 255, 0.7); }
+}
+
+/* ================= JOGO ================= */
+#game-wrapper {
+  position: relative;
+  width: 900px;
+  height: 600px;
+}
+
+#gameCanvas {
+  display: block;
+  background: #000;
+  border: 2px solid #6a3cff;
+  box-shadow: 0 0 30px rgba(106, 60, 255, 0.6);
+  border-radius: 8px;
+}
+
+#hud {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+#lives { font-size: 1.5rem; text-shadow: 0 0 8px red; }
+
+#progress-container {
+  position: relative;
+  width: 300px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #b47aff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #6a3cff, #ff3cc8);
+  transition: width 0.3s;
+}
+
+#progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#score { text-shadow: 0 0 8px #b47aff; }
+#cooldown-ui { font-size: 0.9rem; color: #ff3cc8; text-shadow: 0 0 8px #ff3cc8; }
+
+/* ================= TELAS DE FIM ================= */
+#gameover-screen, #victory-screen {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 8px;
+  z-index: 20;
+  text-align: center;
+}
+
+#gameover-screen h1 { color: #ff3c3c; text-shadow: 0 0 15px red; }
+#victory-screen h1 { color: #b47aff; text-shadow: 0 0 15px #6a3cff; }
+
+#gameover-screen button, #victory-screen button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #6a3cff, #b47aff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#gameover-screen button:hover, #victory-screen button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #b47aff;
+}
+
+.menu-btn {
+  background: transparent !important;
+  border: 2px solid #b47aff !important;
+  color: #b47aff !important;
+}
