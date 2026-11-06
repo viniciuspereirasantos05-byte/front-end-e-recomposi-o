@@ -1,74 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Jogo que um Adolescente Faria</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raízes & Resistência</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ================= MENU ================= -->
-  <div id="menu-screen">
-    <div class="stars-bg"></div>
-    <div class="menu-content">
-      <h1>Jogo que um Adolescente Faria</h1>
-      <p class="subtitle">Um space shooter feito com pressa, café e criatividade.</p>
+<!-- LUFFY QUICANDO -->
+<img src="luffy-gear5.gif" alt="" id="luffy-quicando">
 
-      <div class="info-box">
-        <h2>📖 Sobre o Jogo</h2>
-        <p>
-          Você pilota uma nave solitária no espaço enfrentando hordas infinitas
-          de inimigos. A cada onda a barra de progresso sobe — e no final dela,
-          um <strong>Boss gigante</strong> te espera.
-        </p>
-      </div>
+<!-- CAPA -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Raízes & Resistência</h1>
+    <h2>A Jornada da Diversidade</h2>
+    <p>Uma aventura para entender a história, <span class="hl">combater o preconceito</span> e celebrar a pluralidade étnico-racial do Brasil.</p>
+    <a href="#conteudo" class="btn">INICIAR JORNADA</a>
+  </div>
+</header>
 
-      <div class="info-box">
-        <h2>🎮 Como Jogar</h2>
-        <ul>
-          <li><strong>W</strong> — Avançar</li>
-          <li><strong>S</strong> — Recuar</li>
-          <li><strong>A</strong> — Esquerda</li>
-          <li><strong>D</strong> — Direita</li>
-          <li><strong>Espaço</strong> — Dano em área (Cooldown: 4s)</li>
-          <li>💚 Você tem <strong>3 corações</strong></li>
-          <li>⚠️ Encostar nos inimigos tira vida</li>
-        </ul>
-      </div>
+<!-- CONTEÚDO -->
+<section id="conteudo" class="container">
+  <div class="box">
+    <h2>1. Desconstruindo Conceitos</h2>
+    <p>O preconceito nasce da desinformação. Vamos <span class="hl">separar os fatos dos mitos</span>.</p>
 
-      <button id="play-btn" class="play-button">diversão aqui</button>
+    <div class="destaque">
+      <h3>🧬 O que é Raça?</h3>
+      <p>Biologicamente, <strong>não existem raças humanas</strong>. O genoma é 99,9% idêntico. "Raça" é uma <strong>construção social</strong> criada para justificar a escravidão.</p>
+    </div>
+
+    <div class="destaque">
+      <h3>🌍 O que é Etnia?</h3>
+      <p>Envolve <strong>cultura, língua e ancestralidade</strong>. No Brasil temos povos indígenas, quilombolas, descendentes de africanos, europeus e asiáticos. <span class="hl">Etnia é pertencimento cultural.</span></p>
+    </div>
+
+    <div class="alerta">
+      <p>⚠️ <strong>Diferença crucial:</strong> Raça foi inventada para oprimir. Etnia é vivida para celebrar.</p>
     </div>
   </div>
+</section>
 
-  <!-- ================= JOGO ================= -->
-  <div id="game-wrapper" class="hidden">
-    <canvas id="gameCanvas" width="900" height="600"></canvas>
-
-    <div id="hud">
-      <div id="lives">💚💚💚</div>
-      <div id="progress-container">
-        <div id="progress-bar"></div>
-        <span id="progress-text">0%</span>
-      </div>
-      <div id="score">Pontos: 0</div>
-      <div id="cooldown-ui">💥 Área: <span id="cd-text">Pronto</span></div>
-    </div>
-
-    <div id="gameover-screen" class="hidden">
-      <h1>Fim de Jogo</h1>
-      <p id="final-score">Pontuação: 0</p>
-      <button id="restart-btn">Jogar Novamente</button>
-      <button class="menu-btn" onclick="voltarMenu()">Voltar ao Menu</button>
-    </div>
-
-    <div id="victory-screen" class="hidden">
-      <h1>🏆 Você Venceu!</h1>
-      <p id="victory-score">Pontuação: 0</p>
-      <button id="restart-btn-2">Jogar Novamente</button>
-      <button class="menu-btn" onclick="voltarMenu()">Voltar ao Menu</button>
+<section class="container duas-colunas">
+  <div class="img-col">
+    <img src="luffy-atacando.gif" alt="Luffy atacando" id="luffy-ataque" class="img-interativa">
+    <p class="dica">👊 Clique no Luffy!</p>
+  </div>
+  <div class="box">
+    <h2>2. Racismo Estrutural</h2>
+    <p>O racismo não é só xingamento. É <span class="hl">estrutural</span>: está nas instituições, nas leis e na sociedade.</p>
+    <p><strong>No Brasil:</strong> após 1888, negros foram deixados sem terras, educação ou trabalho. A desigualdade perdura até hoje.</p>
+    <div class="alerta">
+      <p>💡 <strong>Atitude:</strong> denunciar, questionar e não normalizar piadas preconceituosas.</p>
     </div>
   </div>
+</section>
 
-  <script src="game.js"></script>
+<section class="container duas-colunas invertida">
+  <div class="box">
+    <h2>3. Representatividade</h2>
+    <p>Ver pessoas como você em lugares de destaque é um ato de liberdade. A ausência gera <span class="hl">apagamento histórico</span>.</p>
+    <div class="destaque">
+      <h3>🎨 Colorismo:</h3>
+      <p>Pessoas negras de pele retinta sofrem mais preconceito que pessoas negras de pele clara. Uma ferramenta para dividir a luta.</p>
+    </div>
+    <p>A diversidade não é ameaça. É a nossa maior força.</p>
+  </div>
+  <div class="img-col">
+    <img src="luffy-gear5.gif" alt="Luffy Gear 5" id="luffy-g5" class="img-interativa">
+    <p class="dica">✨ Passe o mouse!</p>
+  </div>
+</section>
+
+<!-- QUIZ + CHAT -->
+<section id="interativo" class="container">
+  <div class="box">
+    <h2>4. Dúvidas? O Dr. DNA Responde!</h2>
+
+    <div class="abas">
+      <button class="aba ativa" data-aba="quiz">🎮 QUIZ</button>
+      <button class="aba" data-aba="chat">💬 CHAT</button>
+    </div>
+
+    <!-- ABA QUIZ -->
+    <div id="aba-quiz" class="aba-conteudo ativo">
+      <div class="dna-fala">
+        <img src="dr-dna.png" alt="Dr. DNA" class="dna-img">
+        <div class="balao" id="balao">Olá! Responda rápido: eu já te digo se acertou!</div>
+      </div>
+      <h3 id="pergunta">Carregando...</h3>
+      <div id="opcoes"></div>
+    </div>
+
+    <!-- ABA CHAT -->
+    <div id="aba-chat" class="aba-conteudo">
+      <div class="dna-fala">
+        <img src="dr-dna.png" alt="Dr. DNA" class="dna-img">
+        <div class="balao">Digite sua dúvida sobre racismo, etnia, colorismo...</div>
+      </div>
+      <div id="chat-historico"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Digite sua dúvida..." autocomplete="off">
+        <button type="submit" class="btn">ENVIAR</button>
+      </form>
+      <div class="sugestoes">
+        <button class="sugestao">O que é racismo estrutural?</button>
+        <button class="sugestao">O que é colorismo?</button>
+        <button class="sugestao">O que é lugar de fala?</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Projeto Educacional • Contexto Étnico-Racial • Pixel Art</p>
+  <p>Feito com respeito à luta antirracista. ✊🏿✊🏾✊🏽</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
